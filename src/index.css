@@ -77,4 +77,13 @@ h2{
   font-size:20px;
 }
 
-  
+button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: var(--primary-color);
+}
+
+.result-output:hover {
+  background-color: var(--secondary-color);
+  color: white
+}

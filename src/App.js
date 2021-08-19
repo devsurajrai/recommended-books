@@ -5,23 +5,21 @@ import './App.css';
 
 
 function App() {
-
-  // Database //
-  
+  //database
   const bookGenre=["Coding","Personality Development","Fiction","Spirituality"]
   const Coding=[
     {
       name:"You Don't Know Javascript",
       rating:"4.8/5"
     },
-   {
-     name:"Eloquent Javascript",
-     rating:"4.5/5"
-   },
-   {
-    name:"Clean Code",
-    rating:"4.6/5"
-  }
+    {
+      name:"Eloquent Javascript",
+      rating:"4.5/5"
+    },
+    {
+     name:"Clean Code",
+     rating:"4.6/5"
+    }
   ]
   const personalityDevelop=[
     {
@@ -68,17 +66,13 @@ function App() {
 ]
 
 //Processing//
-  
   var[book,setBook]=useState([]);
   var array;
 
-              //  callback function //
+  //  callback function //
 
   var genreClickedCB=(genreName,index)=>{
-    
-    
-    
-              //conditional operation//
+   //conditional operation//
 
     switch(genreName){
       case "Coding": array=Coding;
@@ -89,15 +83,12 @@ function App() {
       break;
       case "Spirituality": array=spirituality;
       break;
-      
       default: array=null
-
     } 
 
-              //condition to check if the value of array is null
+    //condition to check if the value of array is null
 
     book=array && array.map((item)=>{
-      
       return(
         <p className="result-output">{item.name}<br></br>{item.rating}</p> )
     })
@@ -127,8 +118,6 @@ function App() {
                                               })}
                                               {/* Input as a button click  */}
               </div>
-              
-
               <div className="result-div" >
                 {book} 
                 {/* output */}
