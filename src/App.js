@@ -1,7 +1,6 @@
 // input => processing => output
 
 import {useState} from 'react'
-import './App.css';
 
 
 function App() {
@@ -31,7 +30,7 @@ function App() {
       rating:"4.2/5"
     },
     {
-      name:"Ego Is the Enemy",
+      name:"Atomic Habits",
       rating:"4.2/5"
     }]
 
