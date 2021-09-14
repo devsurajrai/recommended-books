@@ -101,7 +101,7 @@ function App() {
         //condition to check if the value of array is null
 
         book = array && array.map((item) => {
-            return (<br p className="result-output" > {item.name} <br> </br>{item.description} <br></br>{item.rating}</p>)
+            return (<p className="result-output" > Book: <b>{item.name}</b> <br /><br /> Description: {item.description} <br /><br />Rating: {item.rating}</p>)
         })
         setBook(book)
     }
@@ -121,7 +121,7 @@ function App() {
                     {
                         bookGenre.map((item, idx) => {
                             return (
-                                <p key={idx} style={{ display: 'inline', margin: "5px" }} >
+                                <p key={idx} className="genre-btn" style={{ display: 'inline', margin: "5px" }} >
                                     < button onClick={() => genreClickedCB(item, idx)} > {item} </button>
                                 </p >
                             )
