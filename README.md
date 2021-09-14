@@ -8,7 +8,7 @@ This app is a book recommendation app as the name suggests, provides you with th
 
 ## screenshots 👇
 
-![app-screenshot-1](src/ss1.png)
-![app-screenshot-2](src/ss2.png)
+![app-screenshot-1](src/book-recomendation-1.png)
+![app-screenshot-2](src/book-recommendation-2.png)
 
 ## Live Link: [Go to project](https://recommended-books.netlify.app)
