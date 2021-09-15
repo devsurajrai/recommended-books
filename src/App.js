@@ -121,7 +121,7 @@ function App() {
                     {
                         bookGenre.map((item, idx) => {
                             return (
-                                <p key={idx} className="genre-btn" style={{ display: 'inline', margin: "5px" }} >
+                                <p key={idx} style={{ display: 'inline', margin: "5px" }} >
                                     < button onClick={() => genreClickedCB(item, idx)} > {item} </button>
                                 </p >
                             )
